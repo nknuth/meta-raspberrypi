@@ -13,5 +13,3 @@ do_install:append:rpi () {
     install -m 0644 ${WORKDIR}/fw_env.config ${D}${sysconfdir}/fw_env.config
 }
 
-# Temporary avoid Raspberry Pi 5 because U-Boot has not been ported yet
-COMPATIBLE_MACHINE:raspberrypi5 = "(-)"
